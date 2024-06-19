@@ -7,7 +7,7 @@
     --grey-light: #eeeeee; 
     --grey-dark: #405175;
     --purple: #aa8afc;
-    --green: #00d8a7;
+    --green: #35e23e;
     --white: #ffffff;
 }
 
@@ -93,12 +93,26 @@ li{
 }
 
 #todoLi p{
+    display: flex;
+    gap: 1rem;
+    color: var(--dark);
+    align-items: center;
+}
+
+#todoLi .disabled {
     color: #8f98a8;
 }
 
 .disabled{
     display: flex;
     text-decoration: line-through;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
 }
 
 input[type="checkbox"]::before{
@@ -113,7 +127,7 @@ input[type="checkbox"]::before{
     color: transparent;
 }
 
-input[type="checkbox"]::before::after{
+input[type="checkbox"]:checked::before{
     color: var(--white);
     background-color: var(--green);
     border: 0.06rem solid var(--green);
