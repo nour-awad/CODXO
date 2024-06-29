@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
-    font-family: "Noto Serif", cursive;
+* {
+    font-family: "Noto Serif", serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-header{
-    background-color:whitesmoke;
+header {
+    background-color: whitesmoke;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -19,7 +19,7 @@ header{
     padding: 10px 200px;
 }
 
-.logo{
+.logo {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
@@ -27,7 +27,7 @@ header{
     font-size: 1.8em;
 }
 
-.navi a{
+.navi a {
     text-decoration: none;
     color: black;
     font-size: 1.1em;
@@ -35,15 +35,15 @@ header{
     padding-left: 30px;
 }
 
-.navi a:hover{
+.navi a:hover {
     color: #FA4EAB;
 }
 
-section{
-    padding:100px 200px;
+section {
+    padding: 100px 200px;
 }
 
-.main{
+.main {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -53,14 +53,13 @@ section{
     background-position: center;
 }
 
-.main h2{
+.main h2 {
     color: whitesmoke;
     font-size: 1.6em;
     font-weight: 500;
-
 }
 
-.main h2 span{
+.main h2 span {
     display: inline-block;
     margin-top: 10px;
     color: #FA4EAB;
@@ -68,7 +67,7 @@ section{
     font-weight: 600;
 }
 
-.main h3{
+.main h3 {
     color: whitesmoke;
     font-size: 2em;
     font-weight: 500;
@@ -76,7 +75,7 @@ section{
     margin-bottom: 30px;
 }
 
-.main-btn{
+.main-btn {
     color: whitesmoke;
     background-color: #FA4EAB;
     text-decoration: none;
@@ -87,16 +86,70 @@ section{
     border-radius: 15px;
     letter-spacing: 1px;
     margin-bottom: 40px;
-    transition: 0.5s ease ;
+    transition: 0.5s ease;
 }
 
-.main-btn:hover{
+.main-btn:hover {
     background-color: #fa4eaae1;
     transform: scale(1.1);
 }
 
-.social a{
+.social a {
     color: whitesmoke;
     font-size: 1.7em;
     padding: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    border-radius: 15px;
+}
+
+#skills h2,
+#projects h2 {
+    color: black;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#skills .content {
+    margin-top: 2rem;
+    background-color: black;
+    border-radius: 15px;
+}
+
+#skills .content .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+#skills .content .row .item {
+    background-color: #040D12;
+    margin: 20px;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+#skills .content .row .item:hover {
+    box-shadow: 0 4px 8px rgba(64, 64, 64, 0.961);
+}
+
+#skills .content .row .item i {
+    color: #FA4EAB;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#skills .content .row .item p {
+    font-size: 18px;
+    font-weight: 600;
+    color: whitesmoke;
+    margin-top: 10px;
 }
