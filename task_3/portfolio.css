@@ -9,7 +9,7 @@
 }
 
 header {
-    background-color: whitesmoke;
+    background-color: white;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -152,4 +152,60 @@ section {
     font-weight: 600;
     color: whitesmoke;
     margin-top: 10px;
+}
+
+#projects .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card{
+    background-color: black;
+    border: 1px solid black;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    margin: 20px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card:hover .image {
+    opacity: 0.95;
+}
+
+.image img{
+    width: 100%;
+}
+
+.info{
+    padding: 1em;
+    color: white;
+}
+
+.cat{
+    font-size: 0.8em;
+}
+
+.ptitle{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-weight: 800;
+}
+
+.view{
+    text-decoration: none;
+    color: #FA4EAB;
+}
+
+.view:hover {
+    color: #fa4eaae1;
 }
