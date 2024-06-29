@@ -305,3 +305,18 @@ button:hover {
 #contact .text-primary {
     color: #FA4EAB;
 }
+
+.leetcode {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    margin-left: 10px;
+}
+
+.leetcode:hover {
+    cursor: pointer;
+}
+
+.social a img.leetcode {
+    filter: invert(100%);
+}
