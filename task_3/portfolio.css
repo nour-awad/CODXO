@@ -37,6 +37,7 @@ header {
 
 .navi a:hover {
     color: #FA4EAB;
+    cursor: pointer;
 }
 
 section {
@@ -92,6 +93,7 @@ section {
 .main-btn:hover {
     background-color: #fa4eaae1;
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .social a {
@@ -109,7 +111,8 @@ section {
 
 #skills h2,
 #projects h2,
-#resume h2 {
+#resume h2,
+#contact h2 {
     color: black;
     text-align: center;
     font-size: 38px;
@@ -176,10 +179,12 @@ section {
 
 .card:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .card:hover .image {
     opacity: 0.95;
+    cursor: pointer;
 }
 
 .image img{
@@ -209,6 +214,7 @@ section {
 
 .view:hover {
     color: #fa4eaae1;
+    cursor: pointer;
 }
 
 .cv{
@@ -222,6 +228,7 @@ section {
 
 .cv:hover i {
     color: #fa4eaae1;
+    cursor: pointer;
 }
 
 #resume .content {
@@ -230,4 +237,39 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 30px;
+}
+
+input{
+    background-color: white ;
+    width: 70%;
+    margin-left: 12%;
+    font-size: 20px;
+    padding: 16px 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    background-color: white;
+    width: 70%;
+    margin-left: 12%;
+    font-size: 20px;
+    padding: 16px 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: #FA4EAB;
+    border-radius: 20px;
+    font-size: 22px;
+    padding: 10px 18px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+button:hover{
+    background-color: #fa4eaae1;
+    cursor: pointer;
 }
