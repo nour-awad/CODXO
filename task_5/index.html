@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="sub-con">
+                <div class="total-amount">
+                    <h3>Budget</h3>
+                    <p class="hide error" id="bError">Value cannot be negative or empty</p>
+                    <input type="number" id="total-amount" placeholder="Enter your budget">
+                    <button class="submit" id="totalBtn">Set budget</button>
+                </div>
+                <div class="user-amount">
+                    <h3>Expenses</h3>
+                    <p class="hide error" id="eError">Values cannot be empty</p>
+                    <input type="text" class="product" id="ptitle" placeholder="Enter product title">
+                    <input type="number" class="price" id="pPrice" placeholder="Enter product cost">
+                    <button class="submit" id="check-amount">Check amount</button>
+                </div>
+            </div>
+            <div class="result-con flex-space">
+                <div>
+                    <p>Total Budget</p>
+                    <span id="amount">0</span>
+                </div>
+                <div>
+                    <p>Expenses</p>
+                    <span id="expenses-val">0</span>
+                </div>
+                <div>
+                    <p>Balance</p>
+                    <span id="balance">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <h3>Expense List</h3>
+            <div class="list-con" id="list">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
